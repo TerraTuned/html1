@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8"/>   
+       <title>
+           News Website
+       </title>
+       <style>
+           body {
+              
+                background-color:transparent;
+                margin-bottom:3024;
+                margin-bottom:0px;               /* no html{} unecessary spacing on bottom line*/
+           }
+           html {
+                background-color:#cccc;
+           }
+           .part1-lightblue {
+                background-color:#9999ff;
+                height:715px;
+                margin-top:-10px;
+                overflow:hidden;
+                max-height:715px;
+                margin-left:80px;
+                margin-right:80px;
+           }
+           .menu {
+                margin:40px 0 85px 20px;
+                cursor:not-allowed;
+           }
+           .language {
+                margin:40px 20px 85px 20px;
+                float:right;
+                cursor:not-allowed;
+            } 
+            .search {
+                 margin:125px -100px 0 0px;
+                 float:right;
+            }
+            #searchbar {
+                 float:right;
+                 margin:185px 0px 0px 0px;
+                 background-color:aquamarine;
+                 opacity:1;
+                 border: 1px solid aquamarine;
+            }
+            .search:hover {
+                -webkit-transform: scaleX(-1);
+                 transform: scaleX(-1);
+            }
+            #searchbar::placeholder {
+               opacity:0.2; 
+            }
+            #searchbar:focus::placeholder {
+               opacity:1;
+               background-color:palegreen;
+               color:blue;
+            }
+            .firstPicture {
+                background-color:#0000cc;
+            }
+            .learn-more {
+                margin:10px;
+                background-color:transparent;
+                border: 4px white solid;
+                color:#fff;
+                text-align:center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 40px;
+                position:absolute;
+                margin: 600px 0px 0px 200px;
+                border-radius:45px;
+                width:240px;
+                height:70px;
+                opacity:0.9;
+            }
+            .read-news {
+                margin:10px;
+                background-color:transparent;
+                border: 4px white solid;
+                color:#fff;
+                text-align:center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 40px;
+                position:absolute;
+                margin: 600px 0px 0px 1127px;
+                border-radius:45px;
+                width:240px;
+                height:70px;
+                opacity:0.9;
+            }
+            .p1 {
+                position:absolute;
+                color:#fff;
+                margin: 100px 85px 0px 0px;
+                top:200px;
+                text-align:center;
+                padding-left:150px;
+                padding-right:150px;
+            }
+            #first-title {
+                font-size:35px;
+            }
+            learn-more:hover {
+                color:aqua;
+            }   
+            button:hover {
+                color:red;
+                border-color:red;
+                opacity:1;
+            }                                                                       /* EVERYTHING BELOW IS TOOLTIPS FOR ICONS IMPORTANT */  
+            .tooltip-menu {  
+                display: inline-block;
+            }
+            .tooltip-menu .tooltiptext-menu {
+                 visibility: hidden;
+                background-color:orange;
+                color:black;
+                text-align: center;
+                position: absolute;
+                z-index:1;
+            }
+            .tooltip-menu:hover .tooltiptext-menu {
+                visibility: visible;
+            }
+            .tooltip-language {  
+                 float:right;
+            }
+            .tooltip-language .tooltiptext-language {
+                visibility: hidden;
+                background-color:orange;
+                color:black;
+                text-align: center;
+                position:absolute;
+                z-index:1;
+            }
+            .tooltip-language:hover .tooltiptext-language {
+                 visibility: visible;
+            }
+            .tooltiptext-menu {
+               margin-top:100px;
+            }
+            .tooltiptext-language{                                                /*  POSITIONING LANGUAGE ICON IMPORTANT */
+                position: fixed;
+                top: 100px;
+                right: 200px;
+            }                                                                     /* TOOLTIPS FOR ICONS END */
+            .logo {
+                left:90px;
+                display:inline-block;
+                position:absolute;
+                height:213.5px;
+                width:1725px;
+                text-align:center;                                    /* LOGO PLACEMENT THAT TOOK AGES WHEN IT SHOULDNT HAVE*/ 
+            }
+            /* PART 2 */
+            .part2-white {
+                background-color:white;
+                text-align:top;
+                margin-left:80px;
+                margin-right:80px;
+                height:1436px;
+                width:inherit;                                                    /* inherit used properly */                                                                              
+            }
+            .what-is-cybersecurity {
+                margin:0;
+                font-size:20px;
+                text-align:center;
+                padding:25px;
+                padding-bottom:0px;
+            }
+            .post1 {
+                width: 25%;
+                height:212px; 
+                float:left;
+            }
+            .post1-text {
+                text-align:center;
+                padding:20px;
+            }
+       </style>
+   </head> 
+   <body>
+       <!-- Attempt to make the whole layout in 1 div and multiple sections -->
+            <!-- JAVA -->
+            <div id="main_div">
+            <div class="part1-lightblue">
+                <section class="tooltip-menu">                                               <!--SECTION FOR THE TOOLTIPS-->
+                    <img class="menu" src="../html/website/Untitled-1.png"> 
+                    <span class="tooltiptext-menu">Menu Not Implemented Yet</span>           <!-- MENU-->
+                </section>
+                <section class="tooltip-language">
+                     <img class="language" src="../html/website/Untitled-2.png">
+                     <span class="tooltiptext-language">Language Choice Not Implemented Yet</span>          <!--LANGUAGE-->
+                </section> 
+                <section class="logo">                                       <!--WHOLE SECTION JUST TO FIX THAT DAMN LOGO-->
+                <a href="https://www.brandcrowd.com/maker/tag/company" target="_blank">
+                <img id="logo" src="../html/website/Untitled-5.png">                           <!-- THIS IS THE PROBLEM THIS SECTION-->
+                </a>                                                         <!--CONTINUATION OF THE REGULAR SECTION-->
+                </section>
+                <img class="search" src="../html/website/Untitled-3.png">
+                <input id="searchbar" type="text" placeholder="Search..">
+                <a href="https://searchsecurity.techtarget.com/definition/cybersecurity" target="_blank" class="learn more"><button class="learn-more">Learn More</button> </a>
+                <a href="https://cyware.com/cyber-security-news-articles" target="_blank"><button class="read-news">Read News</button> </a>
+                <img class="firstPicture" src="../html/website/Untitled-4.png">     
+                <article class="p1">                                                <!--FIRST ARTICLE-->
+                    <h1 id="first-title">Cybersecurity is the protection of internet-connected systems, including hardware, software and data, from cyberattacks.
+                    </h1>
+                    <p> One of the most problematic elements of cybersecurity is the constantly evolving nature of security risks. The traditional approach has been to 
+                        focus resources on crucial system components and protect against the biggest known threats, which meant leaving components undefended and not 
+                        protecting systems against less dangerous risks.
+                         To deal with the current environment, advisory organizations are promoting a more proactive and adaptive approach. The National Institute of Standa
+                         rds and Technology (NIST), for example, recently issued updated guidelines in its risk assessment framework that recommend a shift toward continuous 
+                         monitoring and real-time assessments.
+                         The process of keeping up with new technologies, security trends and threat intelligence is a challenging task. However, it's necessary in order to pr
+                         otect information and other assets from cyberthreats, which take many forms.
+                         Ransomware is a type of malware that involves an attacker locking the victim's computer system files -- typically through encryption -- and demanding
+                          a payment to decrypt and unlock them.
+                         Malware is any file or program used to harm a computer user, such as worms, computer viruses, Trojan horses and spyware.
+                    </p>
+                </article>
+            </div>
+            <div class="part2-white">
+            <section class="post1">
+                <article>
+                  <h1 class="what-is-cybersecurity"> What Is Cybersecurity?   
+                  </h1>
+                  <p class="post1-text">
+                        Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, o
+                        r destroying sensitive information; extorting money from users; or interrupting normal business processes.
+                  </p>
+                </article>
+            </section> 
+            <section class="post1">
+                <article>
+                    <h1 class="what-is-cybersecurity"> Why Do We Need Cybersecurity?   
+                    </h1>
+                    <p class="post1-text">
+                            If not managed properly, each IoT device that is connected to the internet could provide cybercriminals with a way into a business. With the use of IoT devices potentially introducin
+                            g a wide range of security weaknesses, it is wise to conduct regular vulnerability assessments to help identify and address risks presented by these assets.
+                    </p>
+                </article>
+            </section>  
+            <section class="post1">
+                <article>
+                    <h1 class="what-is-cybersecurity"> Why Is Cyberthreat A Thing And How Are The Hackers Benefitting?   
+                    </h1>
+                    <p class="post1-text">
+                            Private individuals who are worried their identities will be stolen, or who have already had their identities stolen before,get sick to their stomach at the thought.
+                    </p>
+                </article>
+            </section>    
+            <section class="post1">
+                <article>
+                    <h1 class="what-is-cybersecurity"> How To Protect Yourself?   
+                    </h1>
+                    <p class="post1-text">
+                            Do not give out personal information over the phone or in an email unless completely sure. Social engineering is a process of deceiving individuals into providing personal info
+                            rmation to seemingly trusted agents who turn out to be malicious actors. If contacted over the phone by someone claiming to be a retailer or collection agency.
+                    </p>
+                </article>
+            </section>           
+            </div>
+
+
+        
+       </div>
+
+
+
+    
+   </body>
+</html>
