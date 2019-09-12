@@ -1,0 +1,51 @@
+body {
+  background-color: #777;
+}
+
+.swal-overlay {
+  background-color: brown;
+}
+
+.swal-modal {
+  background-color: green;
+  border: 3px solid black;
+  width: 700px;
+  height: 500px;
+}
+
+.swal-title {
+  color: pink;
+}
+
+.swal-button {
+  position: relative;
+  left: 0;
+}
+
+.swal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+.swal-button--cookie_policy {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swal-footer :nth-child(3) {
+  background-color: black;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=styles.css.map */

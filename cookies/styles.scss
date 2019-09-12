@@ -1,0 +1,40 @@
+$page-color: #777;
+$overlay-color: brown;
+$box-color: green;
+$title-color:pink;
+$modal-width:700px;
+$modal-height:500px;
+body {
+  background-color:$page-color;
+}
+.swal-overlay {
+  background-color: lighten($overlay-color,0);
+}
+.swal-modal {
+  background-color: $box-color;
+  border: 3px solid darken($box-color,30);
+  width:$modal-width;
+  height:$modal-height;
+}
+.swal-title {
+  color:lighten($title-color,0);
+}
+.swal-button {
+  position:relative;
+  left:0;  
+}
+.swal-footer {
+  display:flex;
+  flex-direction:column;
+  float:right;
+  width:$modal-width;
+  margin:0;
+  padding:0;
+}
+.swal-button--cookie_policy {
+  align-items:flex-start;
+}
+.swal-footer :nth-child(3) {
+  background-color:black;
+  align-items:flex-end;
+}

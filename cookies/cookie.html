@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="cookie_window()">Click Me</button>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    function cookie_window(){
+        swal({
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            title:"Cookies Policy",
+            text:"Welcome to the cookinator 5000 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptates, omnis et at deleniti possimus architecto dicta eum? Nisi sed ex unde? Tenetur quasi iste eligendi, illo numquam sint explicabo temporibus ratione, totam quos nam quibusdam dolor itaque nostrum quia provident facere alias necessitatibus in, accusantium porro? Vitae, sunt delectus.",
+            buttons: {
+                cancel: "Decline",
+                accept: true,
+                cookie_policy:"asd"
+        },
+            // buttons: {
+            //     asd: "asd",
+            //     asdd:"asdsa"
+            // }
+        })
+    }
+    function cookie_window_1(){
+        swal({
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            title:"Cookies Policy1",
+            text:"1111Welcome to the cookinator 5000 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptates, omnis et at deleniti possimus architecto dicta eum? Nisi sed ex unde? Tenetur quasi iste eligendi, illo numquam sint explicabo temporibus ratione, totam quos nam quibusdam dolor itaque nostrum quia provident facere alias necessitatibus in, accusantium porro? Vitae, sunt delectus.",
+            buttons: {
+                cancel: "Decline",
+                accept: true,
+        },
+        })
+    }
+    </script>
+</body>
+</html>
